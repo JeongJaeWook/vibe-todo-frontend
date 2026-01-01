@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
-const API_URL = 'http://localhost:5050/api/tasks';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5050/api/tasks';
 const ITEMS_PER_PAGE = 10;
 
 function App() {
